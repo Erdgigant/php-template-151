@@ -1,6 +1,6 @@
 <?php
 
-namespace ihrname;
+namespace schilter;
 
 /**
  * Simple Template-Engine which provides arguments into a template,
