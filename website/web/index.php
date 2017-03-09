@@ -1,5 +1,7 @@
 <?php
 
+use schilter\Controller\LoginController;
+
 error_reporting(E_ALL);
 
 require_once("../vendor/autoload.php");
@@ -9,8 +11,8 @@ switch($_SERVER["REQUEST_URI"]) {
 	case "/":
 		(new schilter\Controller\IndexController($tmpl))->homepage();
 		break;
-	case "/testrout":
-		echo "test";
+	case "/login":
+		(new schilter\Controller\LoginController($tmpl))->showLogin();
 		break;
 	default:
 		$matches = [];
